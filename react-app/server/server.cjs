@@ -36,7 +36,7 @@ const User=require('./db/User')
 // This will create a collection (table) named "users" in your login_app database
 // --- ADDED: 2. CREATE THE API POST ROUTE ---
 
-app.post('/api/login', async (req, res) => {
+app.post('/login', async (req, res) => {
     try {
         const { email, password } = req.body; // 1. Unpack login credentials
 
@@ -106,7 +106,7 @@ app.post('/api/login', async (req, res) => {
     }
 });
 
-app.post('/api/user', async (req, res) => {
+app.post('/user', async (req, res) => {
     try {
         const { regNo,name,dept,doj,bGroup,email,credits,cgpa,dob,password,phone,gender,one,two } = req.body; // Unpack data from frontend
 
