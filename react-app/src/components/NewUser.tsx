@@ -112,7 +112,7 @@ const NewUser = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/api/user", {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/user`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
