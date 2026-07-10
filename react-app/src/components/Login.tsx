@@ -26,6 +26,7 @@ const Login = () => {
   const { setUser } = useContext(UserContext)
   const handleSubmit = async (e) => {
     e.preventDefault();
+    alert("Sign in button is clicked");
     try {
       console.log("API URL:", import.meta.env.VITE_API_URL);
       console.log("Login CREATED");
