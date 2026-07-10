@@ -8,6 +8,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use(
+  cors({
+    origin: "https://student-portal-dusky-rho.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 // Retrieve your URI string from memory
 const databaseUri = process.env.ATLAS_URI;
 
