@@ -1,0 +1,44 @@
+.image-card{
+    border-radius: 20px;
+}
+.subject-card{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    background-color: #ddd6fe;
+}
+.subject-card:hover{
+    transform:translateY(-25px) translateX(-25px) translate3d(8px,8px,2px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+.subject-card{
+    transition: all 0.3s ease;
+    font-family: Lucida Bright;
+}
+.grade-card{
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.grade-card:hover{
+    transform:translateY(-20px) translateX(-20px) translate3d(8px,8px,2px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+.grade-card{
+    transition: all 0.5s ease;
+}
+.logo:hover{
+    transform: scale(1.4);
+}
+.logo{
+    transition: all 0.2s ease-in;
+}
+#accord-body{
+    background: linear-gradient(
+    to right,
+    #8b5cf6,
+    #3b82f6
+);
+}
+.custom-accordion .accordion-button {
+  background-color: cyan;
+  color: black;
+  font-family: Lucida Bright;
+  font-size:23px
+}

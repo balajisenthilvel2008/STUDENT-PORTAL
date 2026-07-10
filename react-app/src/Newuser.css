@@ -1,0 +1,46 @@
+.custom-nav-link {
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+/* This triggers the highlight on hover */
+.custom-nav-link:hover {
+  background-color: #000000 !important; /* White background */
+  color: #0dcaf0 !important;            /* Bootstrap Info text color */
+}
+/* Creates a subtle semi-transparent white highlight pill behind the text on hover */
+.custom-hover-btn:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+}
+.bg-1{
+  background-image: url('./img/bg1.jpg');
+}
+#clear:hover,#sub:hover{
+  font-size:20px;
+  color:cyan;
+}
+label:hover{
+  color:cyan;
+  font-size:25px;
+}
+p:hover{
+  color:red;
+  font-size:23px;
+}
+.card{
+  border-radius: 50px;
+}
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 100vh;
+  background: #1f2937;
+  box-shadow: 3px 0 10px rgba(0,0,0,0.2);
+}
+.image-card{
+    border-radius: 20px;
+}
