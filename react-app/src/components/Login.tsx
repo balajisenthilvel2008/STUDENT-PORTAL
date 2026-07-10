@@ -27,6 +27,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      console.log("API URL:", import.meta.env.VITE_API_URL);
       // Points exactly to our new backend route
       const response = await fetch(`${import.meta.env.VITE_API_URL}/login`, {
         method: 'POST',
