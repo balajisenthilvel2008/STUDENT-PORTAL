@@ -53,8 +53,10 @@ const Login = () => {
         alert('Invalid email or password.');
       }
     } catch (error:any) {
+      alert("error occurred: "+error);
     }
     finally{
+      alert("Finally is called");
     }
   };
 
@@ -113,7 +115,6 @@ const Login = () => {
           <div className="d-grid gap-2">
             <button type="submit" className="btn btn-primary">
               Sign in
-              <Link to='/profile'></Link>
             </button>
           </div>
 
