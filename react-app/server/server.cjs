@@ -16,7 +16,7 @@ app.use(
 );
 // Retrieve your URI string from memory
 const databaseUri = process.env.ATLAS_URI;
-
+console.log("ATLAS_URI:", process.env.ATLAS_URI);
 // Connect to MongoDB Atlas
 mongoose.connect(databaseUri, {
     dbName: 'login_app' // Name of the database on your cloud cluster
