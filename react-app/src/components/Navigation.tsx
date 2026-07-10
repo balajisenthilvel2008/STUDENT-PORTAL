@@ -1,11 +1,11 @@
-import React, { useState } from "react";
 import logo from "../img/logo.jpg";
 import { NavLink, useNavigate } from "react-router-dom";
 import '../App.css';
 import { useContext } from "react";
+import { useState } from "react";
 import { UserContext } from "../context/UserContext";
 const Navigation = () => {
-  const [logstate, isloggedin] = useState(true);
+  const [, isloggedin] = useState(true);
   const navigate = useNavigate();
   const { setUser } = useContext(UserContext);
 

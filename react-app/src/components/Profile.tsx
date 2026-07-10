@@ -1,4 +1,3 @@
-import React from "react";
 import Navigation from "./Navigation";
 import boy1 from "../img/boy1.jpg";
 import girl from "../img/girl.jpg";

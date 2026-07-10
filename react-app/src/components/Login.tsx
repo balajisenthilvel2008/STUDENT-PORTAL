@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import logo1 from '../img/logo1.png';
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -12,9 +12,6 @@ const Login = () => {
     password: "",
     rememberMe: false,
   });
-  const [loading,setLoading]=useState(false);
-  const [errorMessage,setErrorMessage]=useState<string>('');
-  const [successMessage,setSuccessMessage]=useState<string>('');
 
   const navigate = useNavigate();
 
@@ -29,9 +26,6 @@ const Login = () => {
   const { setUser } = useContext(UserContext)
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
-    setErrorMessage('');
-    setSuccessMessage('');
     try {
       // Points exactly to our new backend route
       const response = await fetch(`${import.meta.env.VITE_API_URL}/login`, {
@@ -49,7 +43,6 @@ const Login = () => {
       if (response.ok) {
         alert('Login Successful');
         setFormData({ email: '', password: '', rememberMe: false }); 
-        setSuccessMessage(data.message);
         setUser(data.user);
         localStorage.setItem("user",JSON.stringify(data.user));
         navigate('/profile');
@@ -57,10 +50,8 @@ const Login = () => {
         alert('Invalid email or password.');
       }
     } catch (error:any) {
-      setErrorMessage(error.message);
     }
     finally{
-      setLoading(false);
     }
   };
 

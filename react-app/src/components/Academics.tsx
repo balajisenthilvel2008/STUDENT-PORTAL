@@ -1,4 +1,3 @@
-import React from "react";
 import Navigation from "./Navigation";
 import boy1 from "../img/boy1.jpg";
 import girl from "../img/girl.jpg";
@@ -19,19 +18,8 @@ import cProgramming from '../img/cProgramming.jpg'
 import tamiltech from '../img/tamiltech.jpg'
 import probability from '../img/probability.jpg'
 import { FaTimesCircle } from "react-icons/fa";
-<FaTimesCircle color="red" size={20} />
-import {
-  FaCalculator,
-  FaPython,
-  FaChartLine,
-  FaCode,
-  FaLaptopCode,
-} from "react-icons/fa";
-import { BiBookHeart } from "react-icons/bi";
-import { BsGlobe2 } from "react-icons/bs";
 import { useContext } from "react";
 import { UserContext } from "../context/UserContext";
-import type { NumericType } from "mongodb";
 
 const Academics = () => {
   const { user } = useContext(UserContext);
