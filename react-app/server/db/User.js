@@ -50,5 +50,5 @@ const studentSchema = new mongoose.Schema({
   toJSON: { getters: true },
   toObject: { getters: true }
 });
-
+const User = mongoose.model('User', studentSchema);
 module.exports = User;
