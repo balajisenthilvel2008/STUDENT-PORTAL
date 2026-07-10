@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose');
 const semesterOneSchema = new mongoose.Schema({
   grades: {
     calculus: { type: Number, default: '' },
@@ -51,4 +51,4 @@ const studentSchema = new mongoose.Schema({
   toObject: { getters: true }
 });
 
-export default User;
+module.exports = User;

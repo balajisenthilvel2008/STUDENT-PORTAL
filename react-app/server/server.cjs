@@ -1,4 +1,3 @@
-import User from './db/User.js';
 require('dotenv').config({ path: './config.env' });
 
 const express = require('express');
@@ -31,7 +30,7 @@ mongoose.connect(databaseUri, {
 
 // --- ADDED: 1. CREATE DATA MODEL SCHEMA 
 
-
+const User = require('./db/User');
 // This will create a collection (table) named "users" in your login_app database
 // --- ADDED: 2. CREATE THE API POST ROUTE ---
 
